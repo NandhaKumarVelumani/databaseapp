@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="" method="post">
+        <h1 class="form-title">Hi, <%= userName %></h1>
+        <label for="name">Enter your name</label>
+        <input type="text" name="name" /><br />
+        <input type="submit" value="Submit" />
+        <div class="logged-in">
+          <h2>Logged in users</h2>
+          <div class="names">
+            <% users.forEach(function(user){ %> <ul><li><%= user.name %></li></ul> <% }) %>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
