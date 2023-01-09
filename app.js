@@ -13,7 +13,7 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const url =
-  "mongodb+srv://nandhakumarapp:<nandhakumarapp>@cluster0.ob2dytk.mongodb.net/userDB";
+  "mongodb+srv://nandhakumarapp:nandhakumarapp@cluster0.ob2dytk.mongodb.net/userDB";
 
 //mongoose settings
 mongoose.set("strictQuery", false);
