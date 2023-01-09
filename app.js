@@ -27,7 +27,7 @@ const userSchema = {
 const User = mongoose.model("User", userSchema);
 
 const admin = new User({ name: "Admin" });
-admin.save()
+// admin.save()
 
 app.get("/", function (req, res) {
   User.find({}, function (err, users) {
